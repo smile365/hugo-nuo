@@ -1,6 +1,6 @@
 <article class="post-entry">
   <header class="post-header">
-    <h3 class="post-title"><a href="{{ .URL }}" class="post-link">{{ .Title }}</a></h3>
+    <h3 class="post-title"><a href="{{ .RelPermalink }}" class="post-link">{{ .Title }}</a></h3>
     <p class="post-meta">@{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }} · {{ .Date.Format "2006/01/02" }} </p>
   </header>
   {{ if isset .Params "cover" }}
@@ -8,6 +8,6 @@
   {{ end }}
   <p class="post-summary">{{ .Summary | plainify | htmlUnescape }}</p>
   <footer class="post-footer">
-    <a class="read-more" href="{{ .URL }}">阅读更多 →</a>
+    <a class="read-more" href="{{ .RelPermalink }}">阅读更多 →</a>
   </footer>
 </article>
