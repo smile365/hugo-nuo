@@ -6,7 +6,11 @@
   {{ if isset .Params "cover" }}
     <img class="post-cover" src="{{ .Params.cover }}" alt="{{ .Title }}">
   {{ end }}
+  {{ if isset .Site.Params.Description}}
+  <p class="post-summary">{{ .Description | plainify | htmlUnescape }}</p>
+  {{ else }}
   <p class="post-summary">{{ .Summary | plainify | htmlUnescape }}</p>
+  {{ end }}
   <footer class="post-footer">
     <a class="read-more" href="{{ .RelPermalink }}">阅读更多 →</a>
   </footer>
