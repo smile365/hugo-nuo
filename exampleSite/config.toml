@@ -6,7 +6,7 @@ theme = "nuo"
 PygmentsCodeFences = true
 #不使用/切割url，而使用filename.html
 canonifyurls = true
-
+summaryLength = 20
 # Disqus Username
 #disqusShortname = "disqus_shortname"
 
