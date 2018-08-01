@@ -70,8 +70,8 @@ hasCJKLanguage = true
 
   # Changyan Comments (China Only)
   changyan = true
-  changyanId = "cytHq4Tdr"
-  changyanConf = "prod_9ff410ee73431423ab6260fc7eb71b38"
+  changyanId = "cytHpnhhg"
+  changyanConf = "prod_7f720b012d4f4d6bf45f8b6c9aa8a7d0"
 
   # Google Webmaster
   # https://www.google.com/webmasters/
